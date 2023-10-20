@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages</title>
+</head>
+<body>
+    <h1>Messages</h1>
+    <ul>
+        {% for message in messages %}
+            <li>{{message[0]}}</li>
+        {% endfor %}
+    </ul>
+
+    <form action="/" method="POST">
+        <input type="text" name="message">
+        <input type="submit" value="Send">
+    </form>
+</body>
+</html>

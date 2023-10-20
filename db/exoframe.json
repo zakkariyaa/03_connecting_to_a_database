@@ -1,0 +1,10 @@
+{
+  "name": "zakyaris-message-database",
+  "domain": false,
+  "hostname": "zakyaris-message-database",
+  "image": "postgres:12",
+  "env": {
+    "POSTGRES_PASSWORD": "@zakyaris-postgres-password"
+  },
+  "volumes": ["zakyaris_message_database_volume:/var/lib/postgresql/data"]
+}
